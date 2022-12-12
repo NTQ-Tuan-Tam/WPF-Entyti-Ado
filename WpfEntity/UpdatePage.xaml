@@ -1,0 +1,27 @@
+﻿<Window x:Class="WpfEntity.UpdatePage"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfEntity"
+        mc:Ignorable="d"
+        Title="UpdatePage" Height="450" Width="800">
+    <Grid>
+        <TextBox Name="NameTextBox" HorizontalAlignment="Left" Margin="400,137,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="242" Height="32" TextChanged="TextBox_TextChanged"/>
+        <TextBlock x:Name="NameTextBlock" HorizontalAlignment="Left" Margin="173,137,0,0" TextWrapping="Wrap" Text="Name" VerticalAlignment="Top" RenderTransformOrigin="0.771,0.754" Height="32" Width="102"/>
+        <TextBlock  x:Name ="GenderTextBlock" HorizontalAlignment="Left" Margin="173,0,0,0" TextWrapping="Wrap" Text="Gender" VerticalAlignment="Center" Width="104" Height="34"/>
+        <TextBlock HorizontalAlignment="Center" Margin="0,69,0,0" TextWrapping="Wrap" Text="MenBers" VerticalAlignment="Top" Height="31" Width="156"/>
+        <Button x:Name="UpdateBtn" Content="Update" HorizontalAlignment="Left" Margin="322,289,0,0" VerticalAlignment="Top" RenderTransformOrigin="1.817,0.703" Height="36" Width="121" Click="InsertBtn_Click"/>
+        <ComboBox  x:Name="GenderComboBox"   Margin="400,197,158,0" VerticalAlignment="Top" Width="242" Height="34" SelectionChanged="ComboBox_SelectionChanged_1">
+            <ComboBox.Items>
+                <ComboBoxItem>
+                    Male
+                </ComboBoxItem>
+                <ComboBoxItem>
+                    FeMale
+                </ComboBoxItem>
+            </ComboBox.Items>
+        </ComboBox>
+
+    </Grid>
+</Window>
